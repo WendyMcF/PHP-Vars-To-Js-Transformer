@@ -6,4 +6,7 @@ language: php
   - hhvm
   - nightly
 
+before_script:
+  - composer install --dev
+
 script: vendor/bin/phpspec run
